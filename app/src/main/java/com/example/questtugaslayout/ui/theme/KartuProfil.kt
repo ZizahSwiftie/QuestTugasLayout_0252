@@ -52,3 +52,15 @@ fun KartuProfil(
                 contentDescription = null,
                 modifier = Modifier.size(dimensionResource(id = R.dimen.ukuran_logo))
             )
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = dimensionResource(id = R.dimen.jarak_logo_teks))
+            ) {
+                Text(
+                    text = nama,
+                    color = colorResource(id = R.color.teks_putih),
+                    fontSize = dimensionResource(id = R.dimen.font_nama).value.sp,
+                    fontFamily = fontNama,
+                    fontWeight = bobotNama
+                )
