@@ -71,3 +71,9 @@ fun KartuProfil(
                         fontSize = dimensionResource(id = R.dimen.font_detail).value.sp
                     )
                 }
+                Text(
+                    text = alamat,
+                    color = warnaAlamat,
+                    fontSize = dimensionResource(id = R.dimen.font_detail).value.sp
+                )
+            }
