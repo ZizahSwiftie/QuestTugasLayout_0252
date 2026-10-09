@@ -21,3 +21,22 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+
+@Composable
+fun KartuProfil(
+    nama: String,
+    alamat: String,
+    warnaCard: Color,
+    warnaAlamat: Color,
+    modifier: Modifier = Modifier,
+    noHp: String? = null,
+    fontNama: FontFamily = FontFamily.Default,
+    bobotNama: FontWeight = FontWeight.Bold
+) {
+    Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = dimensionResource(id = R.dimen.margin_card)),
+        shape = RoundedCornerShape(dimensionResource(id = R.dimen.sudut_card)),
+        colors = CardDefaults.cardColors(containerColor = warnaCard)
+    ) {
