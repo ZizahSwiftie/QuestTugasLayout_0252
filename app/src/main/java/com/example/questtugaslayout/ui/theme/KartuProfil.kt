@@ -64,3 +64,10 @@ fun KartuProfil(
                     fontFamily = fontNama,
                     fontWeight = bobotNama
                 )
+                if (noHp != null) {
+                    Text(
+                        text = noHp,
+                        color = colorResource(id = R.color.teks_cyan),
+                        fontSize = dimensionResource(id = R.dimen.font_detail).value.sp
+                    )
+                }
