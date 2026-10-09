@@ -42,7 +42,6 @@ fun TugasLayout(modifier: Modifier = Modifier) {
             noHp = stringResource(id = R.string.no_hp)
         )
         Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spasi_antar_card)))
-
         KartuProfil(
             nama = stringResource(id = R.string.nama_3),
             alamat = stringResource(id = R.string.alamat_3),
@@ -51,7 +50,6 @@ fun TugasLayout(modifier: Modifier = Modifier) {
             noHp = stringResource(id = R.string.no_hp)
         )
         Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spasi_antar_card)))
-
         KartuProfil(
             nama = stringResource(id = R.string.nama_4),
             alamat = stringResource(id = R.string.alamat_4),
@@ -59,3 +57,13 @@ fun TugasLayout(modifier: Modifier = Modifier) {
             warnaAlamat = colorResource(id = R.color.teks_putih),
             noHp = stringResource(id = R.string.no_hp)
         )
+
+        Spacer(modifier = Modifier.weight(1f))
+        Text(
+            text = stringResource(id = R.string.copyright),
+            color = colorResource(id = R.color.teks_hitam),
+            fontSize = dimensionResource(id = R.dimen.font_footer).value.sp,
+            modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_footer))
+        )
+    }
+}
