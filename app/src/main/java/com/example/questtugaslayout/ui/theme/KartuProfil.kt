@@ -40,3 +40,15 @@ fun KartuProfil(
         shape = RoundedCornerShape(dimensionResource(id = R.dimen.sudut_card)),
         colors = CardDefaults.cardColors(containerColor = warnaCard)
     ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(dimensionResource(id = R.dimen.padding_isi_card)),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier.size(dimensionResource(id = R.dimen.ukuran_logo))
+            )
