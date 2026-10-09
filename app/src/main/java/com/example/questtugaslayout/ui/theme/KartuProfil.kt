@@ -77,3 +77,11 @@ fun KartuProfil(
                     fontSize = dimensionResource(id = R.dimen.font_detail).value.sp
                 )
             }
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier.size(dimensionResource(id = R.dimen.ukuran_logo))
+            )
+        }
+    }
+}
