@@ -1,5 +1,6 @@
 package com.example.questtugaslayout.ui.theme
 
+import com.example.questtugaslayout.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
